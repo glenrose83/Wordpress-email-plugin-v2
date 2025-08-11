@@ -1,0 +1,9 @@
+body.wp-admin {
+    background-color: black !important;
+}
+
+/* Temporary test - this should be very visible */
+.wrap h1 {
+    color: red !important;
+    font-size: 50px !important;
+}
