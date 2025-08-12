@@ -42,10 +42,9 @@ class Basic_Email_Signup_Form {
     private function define_admin_hooks() {
 
         // Register our method as a content filter        
-         add_action('admin_menu', array($this, 'register_admin_menu'));   
-         
         $plugin_admin = new Basic_Email_Signup_Form_Admin($this->get_plugin_name(), $this->get_version());
         $this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
+        $this->loader->add_action( 'admin_menu', $plugin_admin, 'menu' );
 
     }
 
@@ -55,19 +54,6 @@ class Basic_Email_Signup_Form {
             $content .= '<p style="color:blue; font-weight:bold;">Thank you for reading this post!</p>';
         }
         return $content;
-    }
-
-    // Add the menu to the WordPress backend
-    public function register_admin_menu() {
-        add_menu_page(
-            'Email Signup Form',            // Page title
-            'Basic Email Signup Form',       // Menu title
-            'manage_options',                // Capability required
-            'basic-email-signup-form',       // Menu slug
-            array($this, 'admin_page_html'), // Function to display content
-            'dashicons-email',               // Icon (WordPress Dashicons)
-            25                               // Position in menu
-        );
     }
 
     // HTML for the admin page
