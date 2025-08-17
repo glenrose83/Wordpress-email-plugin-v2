@@ -40,7 +40,47 @@ class Basic_Email_Signup_Form_Admin {
 	}
 	
 	public function get_create_a_form (){
-		echo 'get_create_a_form';
+
+		echo "
+		<div class='flex_container_white'>
+			<div class='page_title'>Create a form</div>
+			<div class='box-container'>
+				<div class='options'><img src='" . plugin_dir_url( dirname( __FILE__ ) ) . "assets/images/pop-up-option.svg' alt='Pop-up option'></div>
+				<div class='options_button'><button class='button button-primary button-medium'>Create a form on pages</button></div>
+			</div>
+		</div>
+
+		<div class='flex_container_white'>
+			<div class='page_title'>Existing forms</div>
+			<div class='container_table_forms'>
+				<table>
+					<thead>
+						<tr>
+							<th class='col-25'>Name</th>
+							<th class='col-25'>List</th>
+							<th class='col-25'>Type</th>
+							<th class='col-15'>Activated</th>
+							<th class='col-10'>Edit</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Data 1</td>
+							<td>Data 2</td>
+							<td>Data 3</td>
+							<td>Data 4</td>
+							<td>Data 5</td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</div>
+
+
+		</div>
+		
+		";
+
 	}
 
 	public function get_subscribers (){
