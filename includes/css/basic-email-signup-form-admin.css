@@ -11,6 +11,21 @@
     -moz-box-shadow: -1px -1px 17px 1px rgba(184,184,184,0.55);
 }
 
+.overview_flex_container_white {
+ background-color: white;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 10px;
+    box-shadow: -1px -1px 17px 1px rgba(184,184,184,0.55);
+    -webkit-box-shadow: -1px -1px 17px 1px rgba(184,184,184,0.55);
+    -moz-box-shadow: -1px -1px 17px 1px rgba(184,184,184,0.55);
+}
+
+
+
 .page_title {
     font-weight: bold;
     font-size: 20px;
@@ -22,6 +37,73 @@
 
     
 }
+
+.overview_warning_text {
+    font-size: 16px;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: red;
+    padding-top: 20px;
+
+}
+
+.overview_text {
+    font-size: 24px;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 60px;
+    color: rgb(53, 53, 53);
+    
+}
+
+.overview_green_text {
+    font-size: 24px;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: green;
+    
+}
+
+.my_flex-row {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    display: flex;
+    gap: 20px;
+    align-items: stretch;    
+}
+
+.my_flex-box {
+    flex: 1; /* Equal width */
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+     box-shadow: -1px -1px 17px 1px rgba(184,184,184,0.55);
+    -webkit-box-shadow: -1px -1px 17px 1px rgba(184,184,184,0.55);
+    -moz-box-shadow: -1px -1px 17px 1px rgba(184,184,184,0.55);
+}
+
+.flex-row {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 20px;
+    align-items: stretch;    
+}
+
+.flex-box {
+    flex: 1; /* Equal width */ 
+    border-radius: 5px;
+    text-align: left;
+
+    
+}
+
 
 .options{
     width: 275px;  
@@ -62,6 +144,10 @@ tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+.container_table_forms tbody tr:nth-child(even) {
+    background-color: #f9fcff;  /* Light blue */
+}
+
 /* Column width classes */
 .col-25 {
     width: 25%;
@@ -73,4 +159,13 @@ tr:nth-child(even) {
 
 .col-10 {
     width: 10%;
+}
+
+
+.drop {
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 60px;
+    
 }
